@@ -1,0 +1,338 @@
+.banner {
+  height: 840px;
+  background: url("../images/banner.png") center;
+  background-size: cover;
+  @include mobile {
+    height: 394px;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    h1 {
+      justify-content: center;
+      align-items: center;
+      font-size: 64px;
+      color: $primary;
+      font-weight: bold;
+      @include pad {
+        font-size: 48px;
+      }
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+    .subTitle {
+      font-size: 36px;
+      color: $primary;
+      @include pad {
+        font-size: 20px;
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.about {
+  background-color: $bgColor;
+  padding: 60px 0 80px 0;
+  h2 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  .about-details {
+    display: flex;
+    justify-content: space-between;
+    @include pad {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    li {
+      width: 23%;
+      @include pad {
+        width: 37%;
+        margin-bottom: 32px;
+      }
+      @include mobile {
+        width: 74%;
+      }
+      .imgBox {
+        max-width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h3 {
+        color: $primary;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+}
+.classic {
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  .classic-series {
+    @include pad {
+      > :nth-child(2) {
+        flex-direction: row-reverse;
+        > img {
+          margin-left: 0;
+          margin-right: 32px;
+        }
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      @include pad {
+        margin-bottom: 8px;
+      }
+      @include mobile {
+        position: relative;
+      }
+      img {
+        width: 60%;
+        @include mobile {
+          width: 100%;
+        }
+      }
+      h3 {
+        color: $secondary;
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 900;
+        display: flex;
+        font-family: Roboto, sans-serif;
+        @include pad {
+          font-size: 28px;
+        }
+        @include mobile {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+        .classic-icon {
+          max-width: 48px;
+          display: block;
+          @include pad {
+            max-width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.co-branding {
+  background: url("../images/bg.png") no-repeat center;
+  background-size: cover;
+  padding: 60px 0 80px 0;
+  @include pad {
+  }
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 32px 0 40px 0;
+  }
+  h2 {
+    color: $light;
+  }
+  .co-branding-products {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-wrap: wrap;
+      > :nth-child(1) {
+        margin-bottom: 16px;
+      }
+    }
+    li {
+      width: 48%;
+      @include mobile {
+        width: 100%;
+      }
+      position: relative;
+      background-color: white;
+      img {
+        opacity: 0.5;
+      }
+      h3 {
+        font-size: 72px;
+        @include pad {
+          font-size: 32px;
+        }
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        color: $secondary;
+        position: absolute;
+        white-space: nowrap;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}
+
+.recommendation {
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  .feedback {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    @include pad {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      > :nth-child(-n + 2) {
+        margin-bottom: 32px;
+      }
+    }
+    @include mobile {
+      > :nth-child(-n + 3) {
+        margin-bottom: 16px;
+      }
+    }
+    li {
+      width: 23%;
+      @include pad {
+        width: 46%;
+      }
+      @include mobile {
+        width: 93%;
+      }
+      h4 {
+        font-size: 14px;
+      }
+      img {
+        border-radius: 4px 4px 0 0;
+      }
+      .customer {
+        padding: 16px;
+        max-width: 100%;
+        @include pad {
+          padding: 16px 24px;
+        }
+        border: #dee2e6 1px solid;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 6px #ecf0f1;
+        .customer-message {
+          height: 172px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .date {
+            font-size: 14px;
+            color: #707070;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactUs {
+  background-color: $bgColor;
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 30px 0 48px 0;
+  }
+  .container {
+    h2 {
+      color: black;
+    }
+    form {
+      width: 66%;
+      margin: 0 auto;
+      @include pad {
+        width: 64%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      p {
+        font-size: 20px;
+        @include pad {
+          font-size: 16px;
+        }
+      }
+      label {
+        @include pad {
+          font-size: 14px;
+        }
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 14px 16px;
+        background-color: transparent;
+        border: 1px solid #000;
+        resize: none;
+      }
+      ::placeholder {
+        opacity: 0.2;
+        font-size: 16px;
+        @include pad {
+          font-size: 14px;
+        }
+      }
+      .agreement {
+        width: auto;
+        vertical-align: middle;
+        margin-top: -2px;
+        margin-bottom: 1px;
+        @include pad {
+          display: block;
+        }
+      }
+      .terms {
+        @include pad {
+          display: block;
+        }
+      }
+      .terms-box {
+        @include pad {
+          display: flex;
+          align-items: baseline;
+        }
+      }
+    }
+    button {
+      width: 48%;
+      padding: 16px 0;
+      color: $light;
+      background-color: $secondary;
+      cursor: pointer;
+      border: 0;
+      display: block;
+      margin: 0 auto;
+      font-weight: bold;
+      &:hover {
+        background-color: $primary;
+      }
+      @include pad {
+        width: 44.5%;
+        font-size: 14px;
+      }
+    }
+  }
+}
