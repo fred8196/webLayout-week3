@@ -1,5 +1,5 @@
 .banner {
-  height: 840px;
+  height: calc(100vh - 109px);
   background: url("../images/banner.png") center;
   background-size: cover;
   @include mobile {
@@ -212,7 +212,7 @@
     li {
       width: 23%;
       @include pad {
-        width: 46%;
+        width: 47%;
       }
       @include mobile {
         width: 93%;
@@ -222,6 +222,7 @@
       }
       img {
         border-radius: 4px 4px 0 0;
+        width: 100%;
       }
       .customer {
         padding: 16px;
