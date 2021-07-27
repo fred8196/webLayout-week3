@@ -1,9 +1,9 @@
 @import "_variable";
-@import "_reset";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
 @import "_mixin";
+@import "_reset";
 @import "_base";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./pages/index";
+@import "_util";
+@import "./layout/_grid";
+@import "layout/_header";
+@import "layout/_footer";
+@import "pages/_index";

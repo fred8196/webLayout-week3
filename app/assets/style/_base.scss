@@ -1,14 +1,4 @@
-.container {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 15px;
-  @include pad {
-    max-width: 720px;
-  }
-  @include mobile {
-    max-width: 375px;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
 
 a {
   color: white;
@@ -24,72 +14,4 @@ h2 {
   @include mobile {
     font-size: 20px;
   }
-}
-
-.mb-1 {
-  margin-bottom: 4px;
-}
-
-.mb-2 {
-  margin-bottom: 8px;
-}
-
-.mb-4 {
-  margin-bottom: 16px;
-}
-
-.mb-5 {
-  margin-bottom: 20px;
-}
-
-.mb-6 {
-  margin-bottom: 24px;
-}
-
-.mb-8 {
-  margin-bottom: 32px;
-}
-
-.mb-9 {
-  margin-bottom: 36px;
-}
-
-.mb-10 {
-  margin-bottom: 40px;
-}
-
-.mr-1 {
-  margin-right: 4px;
-}
-
-.mr-2 {
-  margin-right: 8px;
-}
-
-.mr-4 {
-  margin-right: 16px;
-}
-
-.mr-8 {
-  margin-right: 32px;
-}
-
-.ml-2 {
-  margin-left: 8px;
-}
-
-.ml-5 {
-  margin-left: 20px;
-}
-
-.ml-8 {
-  margin-left: 32px;
-}
-
-.ta-c {
-  text-align: center;
-}
-
-.js-fe {
-  justify-content: flex-end;
 }
