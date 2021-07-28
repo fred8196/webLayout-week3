@@ -1,4 +1,10 @@
 $primary: #650300;
 $secondary: #aa0601;
 $light: #ffffff;
+$dark: #000000;
 $bgColor: #aa06010d;
+
+$font-size-base: 16px;
+$font-size-sm: $font-size-base * 0.875; // 14
+$font-size-md: $font-size-base * 1.25; // 20
+$font-size-lg: $font-size-base * 1.5; // 24

@@ -30,6 +30,10 @@
   margin-bottom: 40px;
 }
 
+.mb-15 {
+  margin-bottom: 60px;
+}
+
 .mr-1 {
   margin-right: 4px;
 }
@@ -40,6 +44,10 @@
 
 .mr-4 {
   margin-right: 16px;
+}
+
+.mr-5 {
+  margin-right: 20px;
 }
 
 .mr-8 {
@@ -64,4 +72,29 @@
 
 .js-fe {
   justify-content: flex-end;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+@include pad {
+  .mb-md-5 {
+    margin-bottom: 20px;
+  }
+  .mb-md-10 {
+    margin-bottom: 40px;
+  }
+}
+
+@include mobile {
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-4 {
+    margin-bottom: 16px;
+  }
+  .mr-sm-3 {
+    margin-right: 12px;
+  }
 }

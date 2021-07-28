@@ -301,20 +301,6 @@
         vertical-align: middle;
         margin-top: -2px;
         margin-bottom: 1px;
-        @include pad {
-          display: block;
-        }
-      }
-      .terms {
-        @include pad {
-          display: block;
-        }
-      }
-      .terms-box {
-        @include pad {
-          display: flex;
-          align-items: baseline;
-        }
       }
     }
     button {
