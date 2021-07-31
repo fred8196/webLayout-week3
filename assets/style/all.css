@@ -154,13 +154,18 @@ h2 {
     h2 {
       font-size: 20px; } }
 
-.title {
+.border-title {
   font-size: 48px;
   font-weight: bold;
-  color: #000000; }
+  color: #000000;
+  padding: 0 16px;
+  border-left: 8px solid #9f1213; }
   @media (max-width: 767px) {
-    .title {
-      font-size: 28px; } }
+    .border-title {
+      font-size: 24px; } }
+  @media (max-width: 992px) {
+    .border-title {
+      border-left: 4px solid #9f1213; } }
 
 .mb-1 {
   margin-bottom: 4px; }
@@ -227,6 +232,8 @@ h2 {
 @media (max-width: 992px) {
   .mb-md-5 {
     margin-bottom: 20px; }
+  .mb-md-8 {
+    margin-bottom: 32px; }
   .mb-md-10 {
     margin-bottom: 40px; } }
 
@@ -237,6 +244,28 @@ h2 {
     margin-bottom: 16px; }
   .mr-sm-3 {
     margin-right: 12px; } }
+
+.store-card-title {
+  border: 1px solid #00000020;
+  font-size: 24px;
+  padding: 12px 24px; }
+  @media (max-width: 992px) {
+    .store-card-title {
+      padding: 8px 24px; } }
+
+.store-card-info {
+  border: 1px solid #00000020;
+  padding: 16px 24px; }
+  .store-card-info li {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    @media (max-width: 992px) {
+      .store-card-info li {
+        font-size: 14px; }
+        .store-card-info li span {
+          width: 20px; } }
 
 .container {
   margin: 0 auto;
@@ -814,15 +843,6 @@ h2 {
   @media (max-width: 767px) {
     .location {
       margin: 28px auto 56px auto; } }
-  .location .title {
-    padding: 0 16px;
-    border-left: 8px solid #9f1213; }
-    @media (max-width: 992px) {
-      .location .title {
-        border-left: 4px solid #9f1213; } }
-    @media (max-width: 767px) {
-      .location .title {
-        font-size: 24px; } }
 
 .area-selector {
   font-size: 24px;
@@ -868,12 +888,12 @@ h2 {
           justify-content: space-between; }
   .stores > :last-child {
     margin-right: auto;
-    margin-left: 5%; }
+    margin-left: 2%; }
     @media (max-width: 992px) {
       .stores > :last-child {
         margin: 0; } }
   .stores > li {
-    width: 30%; }
+    width: 32%; }
     @media (max-width: 992px) {
       .stores > li {
         width: 47%; } }
@@ -883,13 +903,9 @@ h2 {
   .stores img {
     height: 224px;
     width: 100%; }
-  .stores h3 {
-    border: 1px solid #00000020;
-    font-size: 24px;
-    padding: 12px 24px; }
     @media (max-width: 992px) {
-      .stores h3 {
-        padding: 8px 24px; } }
+      .stores img {
+        height: 164px; } }
   .stores button {
     width: 100%;
     color: #ffffff;
@@ -903,18 +919,64 @@ h2 {
     .stores button:hover {
       opacity: 0.7; }
 
-.store-info {
-  border: 1px solid #00000020;
-  padding: 16px 24px; }
-  .store-info li {
-    width: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
+.store-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 992px) {
+    .store-details {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .store-details .store {
+    width: 35%; }
     @media (max-width: 992px) {
-      .store-info li {
-        font-size: 14px; }
-        .store-info li span {
-          width: 20px; } }
+      .store-details .store {
+        width: 100%; } }
+    .store-details .store img {
+      height: 224px;
+      width: 100%; }
+      @media (max-width: 992px) {
+        .store-details .store img {
+          height: 164px;
+          width: 48%; } }
+      @media (max-width: 767px) {
+        .store-details .store img {
+          width: 100%; } }
+  .store-details .store-map {
+    width: 60%; }
+    @media (max-width: 992px) {
+      .store-details .store-map {
+        width: 100%;
+        height: 422px; } }
+    @media (max-width: 767px) {
+      .store-details .store-map {
+        height: 211px; } }
+
+@media (max-width: 992px) {
+  .store-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+@media (max-width: 767px) {
+  .store-card {
+    display: block; } }
+
+@media (max-width: 992px) {
+  .store-card-body {
+    width: 48%; } }
+
+@media (max-width: 767px) {
+  .store-card-body {
+    width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
