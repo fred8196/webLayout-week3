@@ -79,8 +79,17 @@
 }
 
 @include pad {
+  .mb-md-4 {
+    margin-bottom: 16px;
+  }
   .mb-md-5 {
     margin-bottom: 20px;
+  }
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
+  .mb-md-8 {
+    margin-bottom: 32px;
   }
   .mb-md-10 {
     margin-bottom: 40px;
@@ -88,13 +97,43 @@
 }
 
 @include mobile {
-  .mb-sm-6 {
-    margin-bottom: 24px;
+  .mr-sm-3 {
+    margin-right: 12px;
+  }
+  .mb-sm-2 {
+    margin-bottom: 8px;
   }
   .mb-sm-4 {
     margin-bottom: 16px;
   }
-  .mr-sm-3 {
-    margin-right: 12px;
+  .mb-sm-5 {
+    margin-bottom: 20px;
+  }
+  .mb-sm-6 {
+    margin-bottom: 24px;
+  }
+}
+
+.store-card-title {
+  border: 1px solid #00000020;
+  font-size: $font-size-lg;
+  padding: 12px 24px;
+  @include pad {
+    padding: 8px 24px;
+  }
+}
+
+.store-card-info {
+  border: 1px solid #00000020;
+  padding: 16px 24px;
+  li {
+    width: 100%;
+    display: inline-flex;
+    @include pad {
+      font-size: $font-size-sm;
+      span {
+        width: 20px;
+      }
+    }
   }
 }

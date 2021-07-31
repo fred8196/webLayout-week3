@@ -16,11 +16,16 @@ h2 {
   }
 }
 
-.title {
+.border-title {
   font-size: 48px;
+  @include mobile {
+    font-size: $font-size-lg;
+  }
   font-weight: bold;
   color: $dark;
-  @include mobile {
-    font-size: 28px;
+  padding: 0 16px;
+  border-left: 8px solid #9f1213;
+  @include pad {
+    border-left: 4px solid #9f1213;
   }
 }

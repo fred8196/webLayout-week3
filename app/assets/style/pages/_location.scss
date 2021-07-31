@@ -6,16 +6,6 @@
   @include mobile {
     margin: 28px auto 56px auto;
   }
-  .title {
-    padding: 0 16px;
-    border-left: 8px solid #9f1213;
-    @include pad {
-      border-left: 4px solid #9f1213;
-    }
-    @include mobile {
-      font-size: $font-size-lg;
-    }
-  }
 }
 
 .area-selector {
@@ -50,13 +40,13 @@
   justify-content: space-between;
   > :last-child {
     margin-right: auto;
-    margin-left: 5%;
+    margin-left: 2%;
     @include pad {
       margin: 0;
     }
   }
   > li {
-    width: 30%;
+    width: 32%;
     @include pad {
       width: 47%;
     }
@@ -66,15 +56,10 @@
   }
   img {
     height: 224px;
-    width: 100%;
-  }
-  h3 {
-    border: 1px solid #00000020;
-    font-size: $font-size-lg;
-    padding: 12px 24px;
     @include pad {
-      padding: 8px 24px;
+      height: 164px;
     }
+    width: 100%;
   }
   button {
     width: 100%;
@@ -88,21 +73,6 @@
     border: 0;
     &:hover {
       opacity: 0.7;
-    }
-  }
-}
-
-.store-info {
-  border: 1px solid #00000020;
-  padding: 16px 24px;
-  li {
-    width: 100%;
-    display: inline-flex;
-    @include pad {
-      font-size: $font-size-sm;
-      span {
-        width: 20px;
-      }
     }
   }
 }

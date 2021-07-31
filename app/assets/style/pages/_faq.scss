@@ -1,0 +1,42 @@
+.faq {
+  margin: 96px auto 160px auto;
+  @include pad {
+    margin: 60px auto 96px auto;
+  }
+  @include mobile {
+    margin: 28px auto 56px auto;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 20px;
+      font-weight: normal;
+    }
+  }
+  &-list {
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    p {
+      padding-left: 95px;
+      span {
+        display: block;
+        @include mobile {
+          display: inline;
+        }
+      }
+      @include pad {
+        padding-left: 60px;
+      }
+      @include mobile {
+        padding: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
