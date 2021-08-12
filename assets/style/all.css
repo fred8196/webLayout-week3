@@ -102,7 +102,6 @@ section {
   display: block; }
 
 body {
-  font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Sans TC", sans-serif; }
 
@@ -515,7 +514,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .banner .container h1 {
+    .banner .container .banner-Title {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -526,19 +525,19 @@ h2 {
       color: #650300;
       font-weight: bold; }
       @media (max-width: 992px) {
-        .banner .container h1 {
+        .banner .container .banner-Title {
           font-size: 48px; } }
       @media (max-width: 767px) {
-        .banner .container h1 {
+        .banner .container .banner-Title {
           font-size: 32px; } }
-    .banner .container .subTitle {
+    .banner .container .banner-subTitle {
       font-size: 36px;
       color: #650300; }
       @media (max-width: 992px) {
-        .banner .container .subTitle {
+        .banner .container .banner-subTitle {
           font-size: 20px; } }
       @media (max-width: 767px) {
-        .banner .container .subTitle {
+        .banner .container .banner-subTitle {
           font-size: 16px; } }
 
 .about {
@@ -659,7 +658,7 @@ h2 {
       padding: 32px 0 40px 0; } }
   .co-branding h2 {
     color: #ffffff; }
-  .co-branding .co-branding-products {
+  .co-branding-products {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -667,35 +666,35 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     @media (max-width: 767px) {
-      .co-branding .co-branding-products {
+      .co-branding-products {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        .co-branding .co-branding-products > :nth-child(1) {
+        .co-branding-products > :nth-child(1) {
           margin-bottom: 16px; } }
-    .co-branding .co-branding-products li {
-      width: 48%;
-      position: relative;
-      background-color: white; }
-      @media (max-width: 767px) {
-        .co-branding .co-branding-products li {
-          width: 100%; } }
-      .co-branding .co-branding-products li img {
-        opacity: 0.5; }
-      .co-branding .co-branding-products li h3 {
-        font-size: 72px;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        color: #aa0601;
-        position: absolute;
-        white-space: nowrap;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-                transform: translateX(-50%) translateY(-50%); }
-        @media (max-width: 992px) {
-          .co-branding .co-branding-products li h3 {
-            font-size: 32px; } }
+  .co-branding-product {
+    width: 48%;
+    position: relative;
+    background-color: white; }
+    @media (max-width: 767px) {
+      .co-branding-product {
+        width: 100%; } }
+    .co-branding-product img {
+      opacity: 0.5; }
+    .co-branding-product h3 {
+      font-size: 72px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #aa0601;
+      position: absolute;
+      white-space: nowrap;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%); }
+      @media (max-width: 992px) {
+        .co-branding-product h3 {
+          font-size: 32px; } }
 
 .recommendation {
   padding: 60px 0 80px 0; }
@@ -939,13 +938,15 @@ h2 {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
   .store-details .store {
-    width: 35%; }
+    width: 40%; }
     @media (max-width: 992px) {
       .store-details .store {
         width: 100%; } }
     .store-details .store img {
       height: 224px;
-      width: 100%; }
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
       @media (max-width: 992px) {
         .store-details .store img {
           height: 164px;
@@ -954,7 +955,9 @@ h2 {
         .store-details .store img {
           width: 100%; } }
   .store-details .store-map {
-    width: 60%; }
+    width: 57%;
+    -o-object-fit: cover;
+       object-fit: cover; }
     @media (max-width: 992px) {
       .store-details .store-map {
         width: 100%;
