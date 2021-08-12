@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    h1 {
+    .banner-Title {
       justify-content: center;
       align-items: center;
       font-size: 64px;
@@ -24,7 +24,7 @@
         font-size: 32px;
       }
     }
-    .subTitle {
+    .banner-subTitle {
       font-size: 36px;
       color: $primary;
       @include pad {
@@ -151,7 +151,7 @@
   h2 {
     color: $light;
   }
-  .co-branding-products {
+  &-products {
     display: flex;
     justify-content: space-between;
     @include mobile {
@@ -160,30 +160,30 @@
         margin-bottom: 16px;
       }
     }
-    li {
-      width: 48%;
-      @include mobile {
-        width: 100%;
+  }
+  &-product {
+    width: 48%;
+    @include mobile {
+      width: 100%;
+    }
+    position: relative;
+    background-color: white;
+    img {
+      opacity: 0.5;
+    }
+    h3 {
+      font-size: 72px;
+      @include pad {
+        font-size: 32px;
       }
-      position: relative;
-      background-color: white;
-      img {
-        opacity: 0.5;
-      }
-      h3 {
-        font-size: 72px;
-        @include pad {
-          font-size: 32px;
-        }
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        color: $secondary;
-        position: absolute;
-        white-space: nowrap;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-      }
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: $secondary;
+      position: absolute;
+      white-space: nowrap;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
 }
