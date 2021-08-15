@@ -336,7 +336,10 @@ h2 {
           width: 50%; } }
     .header .menu a {
       font-size: 20px;
-      padding: 38px 32px 41px 32px; }
+      padding: 38px 32px 41px 32px;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
       @media (max-width: 992px) {
         .header .menu a {
           padding: 38px 20px 41px 20px; } }
@@ -344,6 +347,8 @@ h2 {
         .header .menu a {
           padding: 8px 0px;
           outline: white 1px solid; } }
+      .header .menu a:hover {
+        font-size: 25px; }
 
 .footer {
   background-color: #aa0601; }
