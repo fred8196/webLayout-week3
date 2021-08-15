@@ -39,12 +39,16 @@
     a {
       font-size: 20px;
       padding: 38px 32px 41px 32px;
+      transition: all 1s;
       @include pad() {
         padding: 38px 20px 41px 20px;
       }
       @include mobile() {
         padding: 8px 0px;
         outline: white 1px solid;
+      }
+      &:hover {
+        font-size: 25px;
       }
     }
   }
